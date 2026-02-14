@@ -1,0 +1,47 @@
+body {
+    background-color: #99c7a181;
+    text-align: center;
+}
+
+#mi-nombre {
+    color: rgb(26, 101, 145);
+}
+
+.especial {
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21px
+}
+
+article {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    margin-top: 20px;
+    width: 200px;
+    background-color: rgba(144, 238, 238, 0.308);
+}
+
+/* Estilos normales (para ordenador) */
+article {
+    width: 300px;
+}
+
+/* Estilos para móviles (pantallas de menos de 600px) */
+@media (max-width: 600px) {
+    article {
+        width: 100%;
+        /* La tarjeta ocupa todo el ancho en el móvil */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* Hacemos el título un poco más pequeño */
+    }
+}
