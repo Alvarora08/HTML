@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Forma profesional de enlazar el CSS en el <head> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_2_3_3.css') }}">
+
+<body>
+    <h1>Prueba de archivos estáticos</h1>
+
+
+<!-- Forma profesional de mostrar una imagen -->
+<img src="{{ url_for('static', filename='img/descarga.png') }}" alt="Logo">
+
+</body>
+</html>
