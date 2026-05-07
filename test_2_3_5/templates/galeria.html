@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control de Alvaro</title>
+    <!-- Forma profesional de enlazar el CSS en el <head> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='estilo_2_3_4.css') }}">
+</head>
+<body>
+    <h1>Eventos del sistema</h1>
+    <ul>
+    {% for item in items %}
+        <li>{{ item.id }} - Evento: {{ item.evento }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
